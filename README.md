@@ -25,21 +25,31 @@
 
 ---
 
-## ☕ 打赏支持
+## ☕ 关于这个项目
 
 <p align="center">
-  <b>插件跑任务要吃 token，打赏 DeepSeek 充值 = 最实在的支持！</b><br>
-  <i>你的每一份支持，都是我继续造轮子的动力 🚀</i>
+  <b>dsh-fleet 始于一个闪光的想法：「把每台闲置机器的算力凑一块儿」</b><br>
+  <i>然后……就真的烧了 token 把它做出来了。开发调试全程烧了约 2 亿 token。</i>
 </p>
 
 <p align="center">
-  <a href="https://platform.deepseek.com/top_up"><img src="https://img.shields.io/badge/DeepSeek%20%E5%85%85%E5%80%BC-%F0%9F%92%B8%20%E7%82%B9%E6%88%91%E6%89%93%E8%B5%8F%20%F0%9F%92%B8-4d6bfe?style=for-the-badge&logo=deepseek&logoColor=white" alt="DeepSeek 充值"></a>
-  <a href="#"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%2F%E6%94%AF%E4%BB%98%E5%AE%9D-%E6%94%B6%E6%AC%BE%E7%A0%81%20%F0%9F%92%B8-07c160?style=for-the-badge&logo=wechat&logoColor=white" alt="收款码"></a>
+  <b>如果你也在做 AI Agent / 全栈开发，欢迎聊聊 —— 无论是合作、外包，还是单纯交流。</b><br>
+  📮 <a href="mailto:3292957@qq.com">3292957@qq.com</a> &nbsp;·&nbsp; GitHub: <a href="https://github.com/scriptsnet">@scriptsnet</a>
 </p>
 
-> 💡 打赏方式一：**DeepSeek 官方充值**——打赏的每一分钱都变成 API 额度，直接用于跑这个插件，等于给插件「续命」。
-> 💡 打赏方式二：**微信 / 支付宝收款码**——通用打赏，随缘支持。
-> （收款码图片待补充，见下方说明）
+> 💡 做这个插件纯属兴趣驱动，目前不靠它盈利。如果你觉得它有用，点个 ⭐ 就是最大的支持。
+
+<br>
+
+<div align="center">
+
+**喜欢的话，赏我点 token 继续造轮子吧 ☕**
+
+| 微信 | 支付宝 |
+|:---:|:---:|
+| <img src="docs/wechat-pay.png" width="220" alt="微信收款码"> | <img src="docs/alipay-pay.jpg" width="220" alt="支付宝收款码"> |
+
+</div>
 
 ---
 
