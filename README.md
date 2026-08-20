@@ -8,6 +8,11 @@
   <b>🧠 每一台闲置机器的算力，都是你的分布式 AI 算力池</b>
 </p>
 
+<p align="center">
+  <b>💻 跨平台 —— 任何一台能跑 DSH 的电脑/机器都能加入算力团队</b><br>
+  <i>Windows 台式机 · Linux 服务器 · macOS 笔记本 · 云上 ECS · 树莓派…… 不限操作系统，是机器就能组队</i>
+</p>
+
 ---
 
 ## ✨ 特性
@@ -21,6 +26,7 @@
 | 💓 **心跳监控** | 长连接 + RTT/内存上报，断线自动重连，在线状态实时可见 |
 | 🚀 **任务派发** | `fleet_dispatch` 把任务发给任意在线成员，worker 自动跑 agent 并回流结果 |
 | 📦 **会话保留** | worker 任务会话自动挂载到工作区，GUI 可见、记录完整、可回溯 |
+| 💻 **跨平台** | Windows / Linux / macOS 均可作为 master 或 worker 加入，不限操作系统 |
 | 🧰 **零运行时依赖** | 仅用 Node 内置模块，无第三方依赖 |
 | 🖥️ **一键安装器** | Windows / Linux 离线安装 harness + 插件，无需 pnpm/GitHub |
 
@@ -57,14 +63,14 @@ dsh plugin --profile web add https://github.com/scriptsnet/dsh-fleet
 
 ### 一键安装器（目标机没有 harness 时）
 
-`installer/` 提供三种形态（任选其一，复制到目标机运行）：
+`installer/` 提供三种形态（任选其一，复制到目标机运行）——**按目标机操作系统选对应安装器，Windows / Linux 都覆盖**：
 
-| 文件 | 用法 |
-|---|---|
-| `install.ps1` | `powershell -ExecutionPolicy Bypass -File install.ps1 -HarnessZip "D:\DeepSeek-Harness-便携版.zip"` |
-| `install.bat` | 双击，或带同样参数 |
-| `dsh-fleet-agent-installer.exe` | 双击（ps2exe 封装） |
-| `install.sh` | `bash install.sh [<插件目录>]`（Linux，含 systemd 自启） |
+| 文件 | 适用系统 | 用法 |
+|---|---|---|
+| `install.ps1` | Windows | `powershell -ExecutionPolicy Bypass -File install.ps1 -HarnessZip "D:\DeepSeek-Harness-便携版.zip"` |
+| `install.bat` | Windows | 双击，或带同样参数 |
+| `dsh-fleet-agent-installer.exe` | Windows | 双击（ps2exe 封装） |
+| `install.sh` | Linux / macOS | `bash install.sh [<插件目录>]`（含 systemd 自启） |
 
 ## 🛠️ 工具一览（12 个）
 
