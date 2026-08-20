@@ -1,0 +1,9 @@
+# dsh-fleet bundle patch — the layer applied when a profile lists this bundle.
+# Installed via: dsh plugin --profile web add <本包路径>
+- insert:
+    - id: dsh-fleet
+      name: dsh-fleet
+      config:
+        port: 47900
+        # home: 默认 $DSH_HOME/fleet（便携版随 data 目录带走）
+        # listen: true

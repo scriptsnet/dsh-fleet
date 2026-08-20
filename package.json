@@ -1,0 +1,64 @@
+{
+  "name": "dsh-fleet",
+  "version": "0.1.0",
+  "description": "DSH 多机算力组网：把多台内网机/云服务器/闲置 PC 组成算力团队，任意一台可调用团队内任意一台的算力，支持任务派发、agent 执行、结果回流与会话保留。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "distributed-computing",
+    "cluster",
+    "compute-fleet",
+    "multi-machine",
+    "agent"
+  ],
+  "author": {
+    "name": "SnowDu",
+    "email": "3292957@qq.com",
+    "url": "https://github.com/scriptsnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scriptsnet/dsh-fleet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scriptsnet/dsh-fleet/issues"
+  },
+  "homepage": "https://github.com/scriptsnet/dsh-fleet#readme",
+  "type": "module",
+  "main": "./src/plugin.js",
+  "exports": {
+    ".": "./src/plugin.js",
+    "./client": "./src/client.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-fleet": "./bin/dsh-fleet.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "installer",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "demo": "node scripts/demo.js",
+    "test": "node scripts/test-plugin.js"
+  },
+  "license": "MIT"
+}

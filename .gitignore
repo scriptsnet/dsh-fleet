@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# build artifacts
+demo/
+dist/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.idea/
+.vscode/
+*.swp
+
+# local fleet data (never commit identities/keys)
+data/
+fleet-data/
+*.identity.json
