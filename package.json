@@ -1,7 +1,7 @@
 {
   "name": "dsh-fleet",
   "version": "0.1.0",
-  "description": "DSH 多机算力组网：把多台内网机/云服务器/闲置 PC 组成算力团队，任意一台可调用团队内任意一台的算力，支持任务派发、agent 执行、结果回流与会话保留。",
+  "description": "⚡ DSH 多机算力组网：把朋友间、局域网、云上 ECS 的闲置算力汇聚成分布式 AI 算力池，一台机调用整个团队任意一台机的算力，任务派发、agent 执行、结果回流与会话保留。一个人掌控多台 Harness，并行推进多个开发与研究项目。",
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -39,6 +39,7 @@
     "src",
     "bin",
     "installer",
+    "docs",
     "cordis.patch.yml",
     "README.md"
   ],
