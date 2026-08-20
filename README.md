@@ -3,53 +3,8 @@
 > 把多台内网机 / 云服务器 / 闲置 PC 组成一个「算力团队」——任意一台机可以调用团队里任意一台机的算力，任务在远端 worker 上自动新建工作区、跑 agent、回流结果，会话与记录完整保留在 worker 的 GUI 里。
 
 <p align="center">
-  <a href="https://github.com/scriptsnet/dsh-fleet"><img src="https://img.shields.io/github/stars/scriptsnet/dsh-fleet?style=for-the-badge&logo=github&label=Stars&color=ff6b6b"></a>
-  <a href="https://github.com/scriptsnet/dsh-fleet/releases"><img src="https://img.shields.io/github/v/release/scriptsnet/dsh-fleet?style=for-the-badge&logo=semver&label=Release&color=4ecdc4"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=open-source-initiative&label=License"></a>
-  <a href="package.json"><img src="https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=for-the-badge&logo=node.js&label=Node"></a>
-  <a href="https://github.com/topics/dsh-plugin"><img src="https://img.shields.io/badge/dsh-plugin-8A2BE2.svg?style=for-the-badge&logo=plugin&label=DSH%20Plugin"></a>
-</p>
-
-<p align="center">
   <b>🧠 把每一台闲置机器的算力，变成你的分布式 AI 算力池</b>
 </p>
-
----
-
-## 👤 作者
-
-<p align="center">
-  <b>SnowDu</b>（GitHub: <a href="https://github.com/scriptsnet">@scriptsnet</a>）<br>
-  📮 <a href="mailto:3292957@qq.com">3292957@qq.com</a> &nbsp;·&nbsp; ☕ 如果这个插件帮你省了钱，请我喝一杯吧 ↓
-</p>
-
----
-
-## ☕ 关于这个项目
-
-<p align="center">
-  <b>dsh-fleet 始于一个闪光的想法：「把每台闲置机器的算力凑一块儿」</b><br>
-  <i>然后……就真的烧了 token 把它做出来了。开发调试全程烧了约 2 亿 token。</i>
-</p>
-
-<p align="center">
-  <b>如果你也在做 AI Agent / 全栈开发，欢迎聊聊 —— 无论是合作、外包，还是单纯交流。</b><br>
-  📮 <a href="mailto:3292957@qq.com">3292957@qq.com</a> &nbsp;·&nbsp; GitHub: <a href="https://github.com/scriptsnet">@scriptsnet</a>
-</p>
-
-> 💡 做这个插件纯属兴趣驱动，目前不靠它盈利。如果你觉得它有用，点个 ⭐ 就是最大的支持。
-
-<br>
-
-<div align="center">
-
-**喜欢的话，赏我点 token 继续造轮子吧 ☕**
-
-| 微信 | 支付宝 |
-|:---:|:---:|
-| <img src="docs/wechat-pay.png" width="220" alt="微信收款码"> | <img src="docs/alipay-pay.jpg" width="220" alt="支付宝收款码"> |
-
-</div>
 
 ---
 
@@ -199,3 +154,31 @@ server → welcome | error(AUTH_FAILED)             服务器本地验签，SK �
 ## 📄 License
 
 [MIT](LICENSE)
+
+---
+
+## ☕ 关于这个项目
+
+<p align="center">
+  <b>dsh-fleet 始于一个闪光的想法：「把每台闲置机器的算力凑一块儿」</b><br>
+  <i>然后……就真的烧了 token 把它做出来了。开发调试全程烧了约 2 亿 token。</i>
+</p>
+
+<p align="center">
+  <b>如果你也在做 AI Agent / 全栈开发，欢迎聊聊 —— 无论是合作、外包，还是单纯交流。</b><br>
+  📮 <a href="mailto:3292957@qq.com">3292957@qq.com</a> &nbsp;·&nbsp; GitHub: <a href="https://github.com/scriptsnet">@scriptsnet</a>
+</p>
+
+> 💡 做这个插件纯属兴趣驱动，目前不靠它盈利。如果你觉得它有用，点个 ⭐ 就是最大的支持。
+
+<br>
+
+<div align="center">
+
+**喜欢的话，赏我点 token 继续造轮子吧 ☕**
+
+| 微信 | 支付宝 |
+|:---:|:---:|
+| <img src="docs/wechat-pay.png" width="220" alt="微信收款码"> | <img src="docs/alipay-pay.jpg" width="220" alt="支付宝收款码"> |
+
+</div>
