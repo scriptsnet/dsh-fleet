@@ -153,6 +153,12 @@ server → welcome | error(AUTH_FAILED)             服务器本地验签，SK �
 - [ ] UDP 打洞；邀请码入队
 - [ ] 发布 npm（`dsh-plugin` topic）后走标准 `dsh plugin add` 安装
 
+## 📖 相关文章
+
+- [DSH 插件开发实战：把朋友的闲置电脑，组建成你的分布式 AI 算力池](https://blog.csdn.net/3cts/article/details/163906669)（CSDN）——从架构设计、协议握手到 7 个真实踩坑记录的完整实战记录
+
+---
+
 ## 📄 License
 
 [MIT](LICENSE)
