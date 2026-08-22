@@ -1,11 +1,12 @@
 // 机器名片：一行可复制的字符串，人工粘贴到组建机即可入队。
 // 格式：dsh-fleet://<machineId>|<名称>|<host>:<port>|<cpu>|<内存GB>GB|<NAT类型>|<永久SK>
-// 字段间用 | 分隔（字段内部允许空格）；NAT 类型 MVP 阶段固定 unknown，后续里程碑探测。
-import { cpuLabel, memGB, preferredIPv4 } from './network.js'
+// 字段间用 | 分隔（字段内部允许空格）；NAT 类型通过 detectNatType 探测，未成功时回退 unknown。
+import { cpuLabel, memGB, preferredIPv4, natLabelSync } from './network.js'
 
-export function buildCard(identity, { host, port, nat = 'unknown' } = {}) {
+export function buildCard(identity, { host, port, nat } = {}) {
   const ip = host || preferredIPv4()
-  const fields = [identity.machineId, identity.name, `${ip}:${port}`, cpuLabel(), `${memGB()}GB`, nat, identity.sk]
+  const natType = nat || natLabelSync()
+  const fields = [identity.machineId, identity.name, `${ip}:${port}`, cpuLabel(), `${memGB()}GB`, natType, identity.sk]
   return `dsh-fleet://${fields.join('|')}`
 }
 

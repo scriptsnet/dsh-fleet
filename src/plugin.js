@@ -20,7 +20,7 @@ import { defineTool } from '@deepseek-ai/dsh-tools'
 import { loadOrCreateIdentity } from './identity.js'
 import { startListener } from './listener.js'
 import { buildCard, parseCard } from './card.js'
-import { preferredIPv4, cpuLabel, memGB, memFreeGB } from './network.js'
+import { preferredIPv4, cpuLabel, memGB, memFreeGB, detectNatType } from './network.js'
 import { probePeer, connectPeer } from './peer.js'
 import { hmac } from './protocol.js'
 import { runTask } from './task-runner.js'
@@ -172,6 +172,13 @@ export const apply = (ctx, config) => {
     }
   }
   const stopMonitors = () => { for (const [, m] of [...monitors]) { try { m.stop() } catch { /* noop */ } }; monitors.clear() }
+
+  // ---------- 启动时预热 NAT / 公网探测 ----------
+  // 名片与面板读取的是同步的 natLabelSync()，这里先异步跑一次把缓存填上，
+  // 保证首次生成名片/展示面板时已有尽量真实的 NAT 标签（失败则回退 unknown）。
+  detectNatType().then((r) => {
+    log(`NAT 探测完成: ${r.nat}${r.publicIp ? `（公网 ${r.publicIp}）` : ''}`)
+  }).catch(() => { /* 探测失败保持 unknown */ })
 
   // ---------- 监听端（被调用方角色） ----------
   let listener = null
