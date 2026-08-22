@@ -9,9 +9,13 @@
 </p>
 
 <p align="center">
-  <b>💻 跨平台 —— 任何一台能跑 DSH 的电脑/机器都能加入算力团队</b><br>
+  <b>💻 跨平台</b> — 任何一台能跑 DSH 的电脑/机器都能加入算力团队<br>
   <i>Windows 台式机 · Linux 服务器 · macOS 笔记本 · 云上 ECS · 树莓派…… 不限操作系统，是机器就能组队</i>
 </p>
+
+---
+
+> 🌐 **English README**: [README.en.md](README.en.md) · 英文版本请见 [README.en.md](README.en.md)
 
 ---
 
@@ -49,8 +53,11 @@
 # 方式一：本地路径安装（无需 GitHub）
 dsh plugin --profile web add "E:\DeepSeekHarness\dsh-fleet"
 
-# 方式二：从 GitHub 安装（发布后）
+# 方式二：从 GitHub 安装
 dsh plugin --profile web add https://github.com/scriptsnet/dsh-fleet
+
+# 方式三：从 npm 安装（推荐）
+dsh plugin --profile web add dsh-fleet
 ```
 
 **重启 harness 后生效。** 插件启动时：
