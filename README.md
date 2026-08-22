@@ -152,10 +152,10 @@ server → welcome | error(AUTH_FAILED)             服务器本地验签，SK �
 - [x] **任务派发 / 执行 / 结果回流**，worker 会话挂载工作区
 - [x] keyHint 双模式（inherit / self），失败 / 超时路径处理
 - [x] 任务可指定 provider / model / preset / 工作区路径
+- [x] **公网 IP / NAT 类型探测**（STUN，带回退分级），名片补全公网信息
 
 **待实现**
 - [ ] 任务日志流式回流 / 产物回传
-- [ ] 公网 IP / NAT 类型探测，名片补全公网信息
 - [ ] UDP 打洞；邀请码入队
 - [ ] 发布 npm（`dsh-plugin` topic）后走标准 `dsh plugin add` 安装
 
